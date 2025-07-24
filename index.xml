@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday, My Love!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Happy Birthday, <span id="wifeName">My Love</span>! 🎉</h1>
+    <p class="hero-message">August 3rd, 2025 — celebrating the most wonderful woman in my life.</p>
+    <video controls autoplay loop muted id="heroVideo" src="birthday-video.mp4"></video>
+    <button onclick="scrollToSection('timeline')">See Our Journey ↓</button>
+  </section>
+
+  <!-- Love Timeline -->
+  <section id="timeline" class="timeline-section">
+    <h2>Our Love Story Timeline</h2>
+    <div class="timeline">
+      <div class="container left">
+        <div class="content">
+          <h3>2017 - First Date</h3>
+          <p>A magical evening that changed my life forever.</p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="content">
+          <h3>2018 - Our First Trip</h3>
+          <p>Exploring new places, creating memories together.</p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="content">
+          <h3>2020 - Wedding Day</h3>
+          <p>The happiest “Yes!” of my life.</p>
+        </div>
+      </div>
+      <!-- Add more milestones as you wish -->
+    </div>
+  </section>
+
+  <!-- Love Notes Section -->
+  <section class="messages-section">
+    <h2>Daily Birthday Wishes</h2>
+    <div class="messages">
+      <div class="message">
+        <h4>August 3rd</h4>
+        <p>Today is a day to celebrate your beautiful soul. I am grateful for every moment with you.</p>
+      </div>
+      <div class="message">
+        <h4>August 4th</h4>
+        <p>Each day I cherish you more. Looking forward to a thousand more birthdays together.</p>
+      </div>
+      <!-- Add more daily/weekly messages -->
+    </div>
+  </section>
+
+  <!-- 10 Reasons I Love You -->
+  <section class="reasons-section">
+    <h2>10 Reasons I Love You</h2>
+    <ul class="reasons-list">
+      <li onclick="showReason(0)">1. Your kindness</li>
+      <li onclick="showReason(1)">2. Your sense of humor</li>
+      <li onclick="showReason(2)">3. The way you care for others</li>
+      <!-- Add up to 10 reasons -->
+    </ul>
+    <div id="reasonModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="reasonText"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery -->
+  <section class="gallery-section">
+    <h2>Our Precious Moments</h2>
+    <div class="gallery">
+      <img src="photo1.jpg" alt="Memory 1">
+      <img src="photo2.jpg" alt="Memory 2">
+      <!-- Add more images -->
+    </div>
+  </section>
+
+  <!-- Surprise Reveal -->
+  <section class="surprise-section">
+    <button class="reveal-btn" onclick="revealSurprise()">Click for Surprise ❤️</button>
+    <div id="surprise" class="hidden">
+      <h3>We're going away for a romantic weekend! 🥂</h3>
+      <p>Pack your bags for an adventure together. Love you endlessly!</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Made with 💖 by your devoted husband</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
